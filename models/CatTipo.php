@@ -39,7 +39,7 @@ class CatTipo extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'tip_id'      => 'Id',
+            'tip_id'     => 'Id',
             'tip_nombre' => 'Nombre',
         ];
     }

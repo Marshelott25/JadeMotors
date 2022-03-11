@@ -14,14 +14,23 @@ Thumbs.db
 
 # composer vendor dir // carpetas que el git va ignorar 
 /commands
-/main
+/mail
 /vendor
 /runtime
 /tests
 /vagrant
 /web
 /widgets
-
+codeception.yml
+composer.json
+composer.lock
+docker-compose.yml
+LICENSE.md
+README.md
+requirements.php
+Vagrantfile
+yii
+yii.bat
 
 
 # composer itself is not needed

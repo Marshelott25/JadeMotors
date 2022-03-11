@@ -21,16 +21,17 @@ Thumbs.db
 /vagrant
 /web
 /widgets
-codeception.yml
-composer.json
-composer.lock
-docker-compose.yml
-LICENSE.md
-README.md
-requirements.php
-Vagrantfile
-yii
-yii.bat
+/codeception.yml
+/composer.json
+/composer.lock
+/docker-compose.yml
+/LICENSE.md
+/README.md
+/requirements.php
+/Vagrantfile
+/yii
+/yii.bat
+/mail/layouts
 
 
 # composer itself is not needed

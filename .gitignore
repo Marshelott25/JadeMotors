@@ -13,9 +13,19 @@ nbproject
 Thumbs.db
 
 # composer vendor dir // carpetas que el git va ignorar 
+
+
 /assets
 /config
 
+#Controlador
+/controllers
+/controllers/!JmModeloController.php
+
+
+#Modelos
+
+/models
 /commands
 /mail
 /vendor

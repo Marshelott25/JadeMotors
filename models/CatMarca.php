@@ -39,7 +39,7 @@ class CatMarca extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'mar_id' => 'Id',
+            'mar_id'     => 'Ixxxd',
             'mar_nombre' => 'Nombre',
         ];
     }

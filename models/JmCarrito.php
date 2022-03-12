@@ -47,10 +47,10 @@ class JmCarrito extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'car_id'                  => 'Id',
-            'car_cantidad'     => 'Cantidad',
-            'car_descripcion'  => 'Descripcion',
-            'car_fkmodelo'     => 'Modelo',
+            'car_id'              => 'I12345d',
+            'car_cantidad'     => 'C23567antidad',
+            'car_descripcion'         => 'Descripcion',
+            'car_fkmodelo'        => 'Modelo',
             'car_fkventa'      => 'Vecxxcccerevrnta',
         ];
     }

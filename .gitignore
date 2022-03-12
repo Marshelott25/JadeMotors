@@ -13,6 +13,8 @@ nbproject
 Thumbs.db
 
 # composer vendor dir // carpetas que el git va ignorar 
+/assets
+/config
 /commands
 /mail
 /vendor
@@ -34,12 +36,6 @@ Thumbs.db
 /mail/layouts
 /.bowerrc
 
-/models/JmCarrito1.php
-eeee.php
-aaaa.txt
-JmCarrito2.php
-JmCarrito.php
-JmCarrito3.php
 
 
 #ignorar los modelos que no son mios
@@ -65,5 +61,4 @@ tests/_support/_generated
 
 #vagrant folder
 /.vagrant
-
-
+/.gitignore

@@ -19,7 +19,7 @@ Thumbs.db
 /config
 
 #Controlador
-/controllers
+/controllers/*.php
 /controllers/!JmModeloController.php
 
 

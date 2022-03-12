@@ -15,6 +15,7 @@ Thumbs.db
 # composer vendor dir // carpetas que el git va ignorar 
 /assets
 /config
+
 /commands
 /mail
 /vendor
@@ -44,7 +45,6 @@ Thumbs.db
 
 #Ignorar controllers 
 
-CatFormaPagoController.php
 
 # composer itself is not needed
 composer.phar

@@ -51,7 +51,7 @@ class JmModelo extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'mod_id'         => 'Id',
+            'mod_id'         => 'Id4444',
             'mod_nombre'     => 'Nombre',
             'mod_precio'     => 'Precio',
             'mod_fkmarca'    => 'Marca',

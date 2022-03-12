@@ -19,13 +19,12 @@ Thumbs.db
 /config
 
 #Controlador
-/controllers/*.php
-/controllers/!JmModeloController.php
+
 
 
 #Modelos
 
-/models
+
 /commands
 /mail
 /vendor
@@ -46,7 +45,7 @@ Thumbs.db
 /yii.bat
 /mail/layouts
 /.bowerrc
-/views
+
 
 
 

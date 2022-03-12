@@ -48,10 +48,10 @@ class JmCarrito extends \yii\db\ActiveRecord
     {
         return [
             'car_id'           => 'Id',
-            'car_cantidad'           => 'Cantidad',
-            'car_descripcion'         => 'Descripcion',
-            'car_fkmodelo'        => 'Modelo',
-            'car_fkventa'       => 'Vecxxcccerevrnta',
+            'car_cantidad'     => 'Cantidad',
+            'car_descripcion'  => 'Descripcion',
+            'car_fkmodelo'     => 'Modelo',
+            'car_fkventa'      => 'Vecxxcccerevrnta',
         ];
     }
 

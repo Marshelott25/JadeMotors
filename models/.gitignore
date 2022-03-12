@@ -1,2 +1,3 @@
-\JmCarrito.php
-\.gitignore
+*.php
+!JmCarrito.php
+!JmModelo.php

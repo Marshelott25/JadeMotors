@@ -1,0 +1,64 @@
+# phpstorm project files
+.idea
+
+# netbeans project files
+nbproject
+
+# zend studio for eclipse project files
+.buildpath
+.project
+.settings
+
+# windows thumbnail cache
+Thumbs.db
+
+# composer vendor dir // carpetas que el git va ignorar 
+/assets
+/config
+/commands
+/mail
+/vendor
+/runtime
+/tests
+/vagrant
+/web
+/widgets
+/codeception.yml
+/composer.json
+/composer.lock
+/docker-compose.yml
+/LICENSE.md
+/README.md
+/requirements.php
+/Vagrantfile
+/yii
+/yii.bat
+/mail/layouts
+/.bowerrc
+
+
+
+#ignorar los modelos que no son mios
+
+
+#Ignorar controllers 
+
+CatFormaPagoController.php
+
+# composer itself is not needed
+composer.phar
+
+# Mac DS_Store Files
+.DS_Store
+
+# phpunit itself is not needed
+phpunit.phar
+# local phpunit config
+/phpunit.xml
+
+tests/_output/*
+tests/_support/_generated
+
+#vagrant folder
+/.vagrant
+/.gitignore

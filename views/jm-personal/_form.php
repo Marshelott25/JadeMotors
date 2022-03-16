@@ -2,10 +2,17 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use yii\helpers\ArrayHelper;
+use app\models\User;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\JmPersonal */
 /* @var $form yii\widgets\ActiveForm */
+
+$usuario = ArrayHelper::map(User::find()->all(), 'id', 'username');
+
+
+
 ?>
 
 <div class="jm-personal-form">
@@ -28,7 +35,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'per_correo')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'per_fkuser')->textInput() ?>
+    <?= $form->field($model, 'per_fkuser')->dropDownList($usuario, ['prompt' => 'Seleccione tipo de usuario...']) ?>
 
     <div class="form-group">
         <?= Html::submitButton('Guardar', ['class' => 'btn btn-success']) ?>

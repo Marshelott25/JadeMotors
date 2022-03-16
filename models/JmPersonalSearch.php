@@ -11,6 +11,9 @@ use app\models\JmPersonal;
  */
 class JmPersonalSearch extends JmPersonal
 {
+
+    public $ejemplo;
+
     /**
      * {@inheritdoc}
      */
@@ -19,6 +22,7 @@ class JmPersonalSearch extends JmPersonal
         return [
             [['per_id', 'per_telefono', 'per_fkuser'], 'integer'],
             [['per_nombre', 'per_apellidopaterno', 'per_apellidomaterno', 'per_domicilio', 'per_fechanacimiento', 'per_rfc', 'per_correo'], 'safe'],
+            [['ejemplo'], 'safe'],
         ];
     }
 
@@ -48,6 +52,16 @@ class JmPersonalSearch extends JmPersonal
             'query' => $query,
         ]);
 
+        $dataProvider -> setSort([
+                'attributes' => [
+                    'ejemplo' => [
+                        'asc'      => ['per_nombre' => SORT_ASC],
+                        'desc'     => ['per_nombre' => SORT_ASC],
+                        'default'  => SORT_ASC
+                    ],
+                ]
+            ]);
+
         $this->load($params);
 
         if (!$this->validate()) {
@@ -69,7 +83,8 @@ class JmPersonalSearch extends JmPersonal
             ->andFilterWhere(['like', 'per_apellidomaterno', $this->per_apellidomaterno])
             ->andFilterWhere(['like', 'per_domicilio', $this->per_domicilio])
             ->andFilterWhere(['like', 'per_rfc', $this->per_rfc])
-            ->andFilterWhere(['like', 'per_correo', $this->per_correo]);
+            ->andFilterWhere(['like', 'per_correo', $this->per_correo])
+            ->andFilterWhere(['like', "SUBSTRING(per_nombre,1,(LOCATE(' ', per_nombre)))", $this->ejemplo]);
 
         return $dataProvider;
     }

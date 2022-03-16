@@ -67,6 +67,7 @@ class JmPersonal extends \yii\db\ActiveRecord
             'per_telefono'        => 'Teléfono',
             'per_correo'          => 'Correo',
             'per_fkuser'          => 'Usuario',
+            'ejemplo'             => 'Otro campo',
         ];
     }
 
@@ -129,4 +130,13 @@ class JmPersonal extends \yii\db\ActiveRecord
     {
         return $this->hasOne(User::className(), ['id' => 'per_fkuser']);
     }
+
+    public function getEjemplo()
+    {
+        $separado = explode(" ", $this->per_nombre);
+        $dato     = $separado[0];
+        $dato     = mb_strtoupper($dato, 'UTF-8');
+        return $dato;
+    }
+
 }
